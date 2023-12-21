@@ -1,0 +1,47 @@
+Sempre surge a necessidade de executar programas como administrador em alguma situação – seja por um momento ou para sempre.
+
+Porém, o que muita gente não sabe é que que não precisamos, necessariamente, dar acesso de administrador ao usuário comum para executar tais programas. Há uma forma mais fácil, segura e eficiente que é através do comando RUNAS.
+
+RUNAS é uma ferramenta de linha de comando que permite que um usuário execute ferramentas específicas e oferece programas com diferentes permissões. Para permitir que um usuário execute aquele programa como administrador usaremos a seguinte sintaxe: runas /savecred /user:administrador.
+
+1. Como usar o comando Runas
+Acesse o Windows com o perfil do usuário que deseja que o programa seja executado como administrador.
+
+Após ter carregado o perfil do usuário, clicaremos com o botão direito do mouse no atalho do programa e selecionamos propriedades.
+
+Runas: executando programa como administrador no WindowsApós, clicaremos na aba atalho e em Destino digitaremos: runas /savecred /user:administrador antes do “C:\…”. Após, clique em Aplicar e Ok.
+
+Runas: executando programa como administrador no Windows
+
+Agora executaremos o atalho. Será solicitada a senha do usuário administrador. Digite a senha (note que quando digita a senha ela ficará invisível) e tecle ENTER.
+
+Runas: executando programa como administrador no Windows
+
+Após ter digitado a senha e teclado ENTER o programa será executado.
+
+Feche o programa e vá novamente no atalho do mesmo e execute-o. Após isso, o programa será aberto sem solicitar a senha.
+
+2. Como alterar a senha usada no RUNAS
+Caso um dia necessite alterar a senha, use o console contas de usuário. Para isso, digite no campo de pesquisa do Windows a palavra“executar” e depois execute.
+
+Runas: executando programa como administrador no Windows
+
+Digite: control userpasswords2 e clique em Ok.
+
+Runas: executando programa como administrador no Windows
+
+Será aberta uma nova janela. Clique na aba avançado e depois Gerenciar Senhas.
+
+Runas: executando programa como administrador no Windows
+
+Agora clique em Credenciais do Windows e altere a credencial.
+
+Runas: executando programa como administrador no Windows
+
+
+
+
+CRÉDITOS
+Diego Gouveia
+
+Nascido e residente de Fortaleza – CE, Diego Lima é graduado em Análise de Sistemas, MTAC (Multi-Plataform Tecnical Audience Contributor), escreve para diversas comunidades técnicas e é autor dos livros: Tudo sobre GPOs no Windows Server e Administrando o Active Directory com o PowerShell. Atualmente é Analista de TI e busca sempre aprender mais para o seu crescimento profissional.
